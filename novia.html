@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Quieres ser mi novia? ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .heart-container {
+      position: relative;
+      width: 350px;
+      height: 350px;
+    }
+
+    .heart-container img {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .heart-container img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Posiciones de las imágenes formando un corazón */
+    .top-left   { top: 30px;  left: 40px;  transform: rotate(-15deg); }
+    .top-right  { top: 30px;  right: 40px; transform: rotate(15deg); }
+    .mid-left   { top: 120px; left: 0px;   }
+    .mid-right  { top: 120px; right: 0px;  }
+    .bottom     { bottom: 20px; left: 50%; transform: translateX(-50%) rotate(10deg); }
+
+    .center-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 200px;
+      background: rgba(255,255,255,0.2);
+      padding: 15px 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .center-text h1 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .center-text p {
+      font-size: 1em;
+      margin-bottom: 10px;
+    }
+
+    .question {
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="heart-container">
+    <!-- Fotos en forma de corazón -->
+    <img src="https://ibb.co/fJQcD85" alt="Foto 1" class="top-left">
+    <img src="https://ibb.co/jPBwRkzM" alt="Foto 2" class="top-right">
+    <img src="https://ibb.co/xKhHywX0" alt="Foto 3" class="mid-left">
+    <img src="https://ibb.co/JLKYrV2" alt="Foto 4" class="mid-right">
+    <img src="foto5.jpg" alt="Foto 5" class="bottom">
+
+    <!-- Texto central -->
+    <div class="center-text">
+      <h1>Para la persona más especial 💖</h1>
+      <p>Desde que llegaste a mi vida, todo cambió para mejor.  
+         Eres mi alegría, mi inspiración y mi razón de sonreír cada día.</p>
+      <div class="question">¿Quieres ser mi novia? ❤️</div>
+    </div>
+  </div>
+</body>
+</html>
